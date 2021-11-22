@@ -40,3 +40,20 @@ class Student extends Person {
     }
 }
 const alfian = new Student('Alfian', 13, 3203, 'SMKN 1 Cibinong', 10, 20023);
+// 3. Abstract Class
+class Culture {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class RegionalCulture extends Culture {
+    constructor(name, country, region) {
+        super(name);
+        this.country = country;
+        this.region = region;
+    }
+    getToKnow() {
+        console.log(`This is ${this.name} Regional Culture, This culture exist in ${this.country}, more depth in ${this.region}`);
+    }
+}
+const sunda = new RegionalCulture('Sunda', 'Indonesia', 'West Java');
