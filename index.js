@@ -65,6 +65,7 @@ class UniqueClass {
     constructor(name) {
         this.name = name;
     }
+    // Defining the "new" method
     static getUnique() {
         if (UniqueClass.instance) {
             return UniqueClass.instance;

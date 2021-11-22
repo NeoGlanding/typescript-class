@@ -73,6 +73,7 @@ class UniqueClass {
     // Defining Private Constructor
     private constructor(public name: string){}
 
+    // Defining the "new" method
     static getUnique() {
         if (UniqueClass.instance) {
             return UniqueClass.instance
