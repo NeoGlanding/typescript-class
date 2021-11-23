@@ -86,3 +86,50 @@ class UniqueClass {
 
 // Making Unique Class Instance
 const unique = UniqueClass.getUnique();
+
+// 5. Interfaces
+
+// Creating an Interface
+interface NonLivingThing {
+    name: string;
+
+    info(): void
+}
+
+// Implement an Interface to Class
+class Wood implements NonLivingThing {
+    constructor(public name: string) {}
+
+    info() {
+        console.log(`The ${this.name} wood is Non Living Thing`)
+    }
+}
+
+// Create an Instance
+const oak = new Wood('Oak Wood');
+
+// Extending interface
+interface Machinable extends NonLivingThing {
+    onoff: string;
+}
+
+// Creating Class Implement Extended Interface
+class Machine implements Machinable {
+    constructor(public name: string, public onoff: string) {}
+
+    info() {
+        console.log(`This is can be On Off`)
+    }
+}
+
+const bubut = new Machine('Bubut', 'Relay');
+
+// Interface as a Function
+interface AsFunction {
+    (a: number, b:number): number
+}
+
+// Implement Interface as a Function
+const addition: AsFunction = (a: number, b: number) => {
+    return a+b
+}

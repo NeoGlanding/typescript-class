@@ -76,3 +76,29 @@ class UniqueClass {
 }
 // Making Unique Class Instance
 const unique = UniqueClass.getUnique();
+// Implement an Interface to Class
+class Wood {
+    constructor(name) {
+        this.name = name;
+    }
+    info() {
+        console.log(`The ${this.name} wood is Non Living Thing`);
+    }
+}
+// Create an Instance
+const oak = new Wood('Oak Wood');
+// Creating Class Implement Extended Interface
+class Machine {
+    constructor(name, onoff) {
+        this.name = name;
+        this.onoff = onoff;
+    }
+    info() {
+        console.log(`This is can be On Off`);
+    }
+}
+const bubut = new Machine('Bubut', 'Relay');
+// Implement Interface as a Function
+const addition = (a, b) => {
+    return a + b;
+};
