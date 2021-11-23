@@ -133,3 +133,17 @@ interface AsFunction {
 const addition: AsFunction = (a: number, b: number) => {
     return a+b
 }
+
+// Optional Parameter in Interface
+interface QA {
+    unit?: string;
+    name: string
+}
+
+class Testing implements QA {
+    constructor(public name: string) {
+    }
+}
+
+const dave = new Testing('Dave');
+console.log(dave)

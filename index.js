@@ -102,3 +102,10 @@ const bubut = new Machine('Bubut', 'Relay');
 const addition = (a, b) => {
     return a + b;
 };
+class Testing {
+    constructor(name) {
+        this.name = name;
+    }
+}
+const dave = new Testing('Dave');
+console.log(dave);
